@@ -1,0 +1,31 @@
+//главынй цвет
+$primary: #1EC9AC !default
+//отображения на разных устройствах
+//960, 1152, 1344 были выбраны так как делятся без остатка на 12 и 16
+$tablet: 769px !default
+//960px container + 40px
+$desktop: 1000px !default
+//1152 container + 40px
+$widescreen: 1192px !default
+//1344 container + 40px
+$fullhd: 1384px !default
+
+=mobile
+  @media screen and (max-width: $tablet -1 px)
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet), print
+    @content
+
+=tablet-only
+  @media screen and (max-width: $tablet) and (max-width: $desktop - 1px)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+=desktop-only
+  @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+    @content
