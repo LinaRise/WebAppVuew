@@ -2,13 +2,15 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/Home'
 import Faq from '@/components/Faq'
+import Join from '@/components/Join'
 
 
 Vue.use(VueRouter);
 
 const routes = [
     {path: '/', component: Home},
-    {path: '/faq', component: Faq}
+    {path: '/faq', component: Faq},
+    {path: '/join', component: Join}
 ];
 
 export default new VueRouter({
@@ -21,9 +23,9 @@ export default new VueRouter({
         }
 
         if (to.hash) {
-            return { selector: to.hash };
+            return {selector: to.hash};
         }
-        return { x: 0, y: 0 }
+        return {x: 0, y: 0}
     }
 })
 

@@ -22,15 +22,14 @@
 
                 <div class="navbar-end navbar-menu" v-bind:class="{'is-active' : isActive}">
                     <router-link to="/" class="navbar-item r-item">Home</router-link>
-                    <router-link :to="{ path: '/', hash: '#features' }" class="navbar-item r-item">Features
-                    </router-link>
+                    <router-link :to="{ path: '/', hash: '#features' }" class="navbar-item r-item">Features</router-link>
                     <router-link to="faq" class="navbar-item r-item">FAQ</router-link>
 
                     <div class="navbar-item">
                         <p class="control">
                             <!--                            is-primary показывает, что кнопка основного цвета,-->
                             <!--                            is-outlined что есть края выкрашшеные в главый цвет-->
-                            <a class="button is-primary is-outlined">
+                            <a class="button is-primary is-outlined" href = "join">
                                <span class="icon has-text-info">
                                     <font-awesome-icon icon="link"/>
                                  </span>
