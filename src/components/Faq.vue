@@ -1,3 +1,4 @@
+<!-- страничка faq-->
 <template>
     <div class="faq">
         <div class="container">
@@ -68,7 +69,7 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style lang="sass" scoped>
     @import '../mq'
 

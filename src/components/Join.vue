@@ -1,3 +1,4 @@
+<!--страничка Join-->
 <template>
     <div class="join">
         <div class="container">
